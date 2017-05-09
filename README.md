@@ -24,16 +24,16 @@ To blend our two methods we simply average the predictions.
 # Requirements
 
 This code requires the following packages to be installed :
-    - Tensorflow-gpu 1.0
-    - [xgboost](https://xgboost.readthedocs.io/en/latest/)
-    - Keras 2.0
-    - openCV
-    - pyradiomics
+- Tensorflow-gpu 1.0
+- [xgboost](https://xgboost.readthedocs.io/en/latest/)
+- Keras 2.0
+- openCV
+- pyradiomics
 
  To install pyradiomics please refer to http://pyradiomics.readthedocs.io/en/latest/installation.html.
  If you have the error ImportError: cannot import name _cmatrices try $sudo python setup.py develop
 
-### Run the model
+# Run the model
 
 To run the script, you will have to run the 6 commands below. The 2 first generate the train features from the Pierre's and Simon's model, the 2 following generate the test features, the 5th train the XGboost model on the train features, and the 6th apply it on the test and save the csv submission file. Note that we parallelized this code for the competition. **Please replace XXX by your data path*
 
